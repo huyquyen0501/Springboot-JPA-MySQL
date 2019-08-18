@@ -15,6 +15,7 @@ public class Controller {
 	@Autowired
 	SessionFactory sessionFactory;
 
+	@RequestMapping
 	public String deFault() {
 		Session session = sessionFactory.getCurrentSession();
 		String SQL = "select word from helloworld";
