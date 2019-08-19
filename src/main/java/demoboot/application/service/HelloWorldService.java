@@ -1,10 +1,10 @@
-package demoboot.service;
+package demoboot.application.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import demoboot.entity.HelloWorld;
-import demoboot.respository.HelloWorldRepository;
+import demoboot.application.entity.HelloWorld;
+import demoboot.application.respository.HelloWorldRepository;
 
 @Service
 public class HelloWorldService {

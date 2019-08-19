@@ -1,4 +1,6 @@
-package demoboot.entity;
+package demoboot.application.entity;
+
+import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,7 +11,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "helloworld")
-public class HelloWorld {
+public class HelloWorld implements Serializable{
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
